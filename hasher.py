@@ -71,10 +71,10 @@ def main():
     print("14. SHA3-224")
     print("15. BLAKE2b")
 
-    selected_option = int(input("Lütfen bir şifreleme yöntemi seçin (1-15): "))
+    selected_option = int(raw_input("Lütfen bir şifreleme yöntemi seçin (1-15): "))
 
     if selected_option in range(1, 16):
-        user_password = input("Lütfen şifrenizi girin: ")
+        user_password = raw_input("Lütfen şifrenizi girin: ")
         hashed_password = hash_password(user_password, selected_option)
         print("Hashlenmiş şifre:", hashed_password)
     else:
