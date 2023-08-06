@@ -44,7 +44,7 @@ def main():
     if selected_option in range(1, 7):
         user_password = raw_input("\033[1;36;40mPlease enter your password: \033[0m")
         hashed_password = hash_password(user_password, selected_option)
-        print("Password Has Been Hashed -------->", hashed_password)
+        print("\033[1;32;40mPassword Has Been Hashed -------->\033[0m", hashed_password)
     else:
         print("\033[1;31;40mInvalid option!\033[0m")
 
